@@ -1,0 +1,197 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title> quarterly project </title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background-image: url("images/purplebg.gif");
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+            font-family: "Pixelify Sans", sans-serif;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        nav {
+            background-color: black;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 30px;
+            color: #F8D9FA;
+            font-family: "Press Start 2P";
+        }
+
+        .left, .right {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        nav img {
+            height: 70px;
+            width: 70px;
+        }
+
+       
+        .right a {
+            color: #F8D9FA;
+            text-decoration: none;
+            font-size: 75%;
+            display: inline-block;
+            transition: transform 0.6s ease, color 0.3s ease;
+        }
+
+        .right a:hover {
+            transform: rotate(360deg);
+            color: #6F5794;
+        }
+
+        
+        .content-row {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 80px;
+        }
+
+        .text-box {
+            width: 380px;
+            background-color: rgba(0,0,0,0.55);
+            padding: 28px;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .text-box:hover {
+            background-color: rgba(0,0,0,0.65);
+        }
+
+        .text-box p {
+            font-size: 18px;
+            color: #EED7FF;
+            line-height: 25px;
+            margin: 0;
+        }
+
+        .audio-column {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        .audio-box {
+            width: 380px;
+            background-color: rgba(0,0,0,0.55);
+            padding: 22px;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .audio-box:hover {
+            background-color: rgba(0,0,0,0.65);
+        }
+
+        .audio-box h2 {
+            font-size: 20px;
+            color: #F8D9FA;
+            margin-bottom: 10px;
+        }
+
+        audio {
+            width: 100%;
+            height: 42px;
+        }
+
+       
+        .add-btn {
+            background-color: #F8D9FA;
+            color: #6F5794;
+            padding: 10px 18px;
+            border-radius: 8px;
+            font-family: "Press Start 2P";
+            font-size: 12px;
+            text-decoration: none;
+            display: block;
+            margin: 40px auto 8px auto;
+            width: fit-content;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .add-btn:hover {
+            transform: scale(1.08);
+            background-color: #EED7FF;
+        }
+
+        .enc-msg {
+            text-align: center;
+            color: #EED7FF;
+            font-size: 12px;
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <div class="left">
+        <img src="https://media3.giphy.com/media/v1.Y2lkPTZjMDliOTUydGlkbDlwamVraTg1YW1uajJjbG0yemUya3EzaXV6a2RyMW9rZzk5OCZlcP12MV92aWRlb3Nfc2VhcmNoJmN0PXY/XL08PcpcrltyoPJFgD/200w.gif">
+        <h1 style="font-size:30px;">“In Between Deadlines”</h1>
+		<h6> Cubillan, Torralba, Verga </h6>
+		</div>
+		
+		<div class="right">
+			<a href="home.html"> Home </a>
+			<a href="aboutus.html"> About Us </a>
+			<a href="stories.html"style="text-decoration:underline; color: #6F5794; font-style: italic;"> Stories </a>
+			<a href="effects.html"> Effects </a>
+			<a href="contact.html"> Contact Information </a>
+   
+</nav>
+
+<div class="content-row">
+
+    <div class="text-box">
+        <p>
+            These are our personal stories—moments we experienced here in Pisay, 
+            in between the pressure, the deadlines, and all the quiet battles we rarely talk about.
+            There were days that felt heavy, days that pushed us past our limits, and days that somehow still ended with a small victory we held onto.
+            <br><br>
+            We’re sharing these stories in hopes that you might relate, find comfort,
+            or simply feel a little less alone.
+        </p>
+    </div>
+
+    <div class="audio-column">
+
+        <div class="audio-box">
+            <h2>Julianna's Story</h2>
+            <audio controls>
+                <source src="audio/Julianna.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+
+        <div class="audio-box">
+            <h2>Czarika's Story</h2>
+            <audio controls>
+                <source src="audio/Czarika.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+
+    </div>
+
+</div>
+
+
+<a class="add-btn" href="addstory.html">Add your story</a>
+
+
+</body>
+</html>
